@@ -1,0 +1,28 @@
+<h1>KpipeServicePackageAdmin#index</h1>
+<p>Find me in app/views/kpipe_service_package_admin/index.html.erb</p>
+
+<table>
+  <tr>
+  	<th>Name</th>
+  	<th>Description</th>
+  	<th></th>
+  	<th></th>
+
+  </tr>
+<% @kpipe_service_packages.each do |service| %>
+  <tr>
+  	<td><%= kpipe_service_package.name %></td>
+  	<td><%= kpipe_service_package.description %></td>
+  	<td><%= link_to 'Show', kpipe_service_package %></td>
+  	<td><%= link_to 'Edit', edit_kpipe_package_service_path(kpipe_service_package) %></td>
+  	<td></td>
+  	<td></td>
+  	<td></td>
+
+  </tr>  	
+
+</table>
+
+</br>
+
+<%= <%= link_to 'New Service Package', new_kpipe_service_package_path %>

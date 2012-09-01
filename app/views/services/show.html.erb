@@ -1,0 +1,86 @@
+<DOCTYPE! html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <!--add more meta tags seo -->
+
+<link rel= "stylesheet" type="text/css" href= "individual_service.css.scss"/>
+
+</head>
+<div id="header">
+		<div id="logo">
+			<%= image_tag("logokpipe180.png", :alt =>"logo") %>
+		</div>
+		<div id="navbar">
+			<nav>
+				<ul>
+					<li><a href="#" class="button blue left">Welcome<a/></li>
+					<li><a href="<%= businesssolutions_path %>" class="button blue middle">Business to Business<a/></li>
+					<li><a href="#" class="button blue middle">Consumer<a/></li>
+					<li><a href="#" class="button blue middle">Search<a/></li>
+					<li><a href="#" class="button blue right">Shop<a/></li>
+				</ul>
+			</nav>
+
+
+		</div>		
+			<div id="checkbar">
+			<nav>
+				<ul>
+					<li><a href="#">Cart<a/></li>
+					<li><a href="#">Checkout<a/></li>
+					<li><a href="#">Track Order<a/></li>
+					<li><a href="#">My Account<a/></li>
+				</ul>
+			</nav>
+
+
+		</div>
+
+
+</div>
+<body>
+	<p id="notice"><%= notice %></p>
+		
+	<div id="individual">
+			<div class="single" style="width:350px; height:350px;">
+  				<%= link_to image_tag @service.image_url, :size => '350x350' %>
+			</div>
+
+			<div id="name">
+				<p><b>Name:</b>
+  						<%= @service.name %>
+				</p>
+			</div>
+
+			<div id="description">
+				<p>
+  					<b>Description:</b>
+  						<%= @service.description %>
+				</p>
+			</div>
+			<br/>
+			<br/>
+			<div id="price">
+				<p>
+  					<b>Price:</b>
+  						<%= @service.price %>
+				</p>
+			</div>
+			
+	
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+
+
+
+
+		<!--<%= link_to 'Edit', edit_service_path(@service) %> |-->
+		<%= link_to 'Back', businesssolutions_path %>
+	</div>	 
+</body>

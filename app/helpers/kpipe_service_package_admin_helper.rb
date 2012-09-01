@@ -1,0 +1,2 @@
+module KpipeServicePackageAdminHelper
+end
