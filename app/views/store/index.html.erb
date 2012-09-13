@@ -21,7 +21,7 @@
 		<div id="navbar">
 			<nav>
 				<ul>
-					<li><a href="#" class="button blue left">Welcome<a/></li>
+					<li><a href="<%= store_index_path %>" class="button blue left">Welcome<a/></li>
 					<li><a href="<%= businesssolutions_path %>" class="button blue middle">Business to Business<a/></li>
 					<li><a href="#" class="button blue middle">Consumer<a/></li>
 					<li><a href="#" class="button blue middle">Search<a/></li>
@@ -32,7 +32,7 @@
 
 		</div>
 
-				<!--checkout -->
+		<!--checkout 
 
 		<div id="checkbar">
 			<nav>
@@ -45,32 +45,50 @@
 			</nav>
 
 
-		</div>
+		</div> -->
     </div>
 	<div id="wrapper">
-		<% @services.each do |service| %>
+		<!--<% @services.each do |service| %>-->
 
 			<div id="leftColumn">
+				<ul>
+					<li><%= image_tag("brainstorming.png", :class => "align-left") %></li>
+					<li><%= image_tag("businessplan.png", :class => "align-left") %></li>
+					<li><%= image_tag("socialmedia.png", :class => "align-left") %></li>
+					<li><%= image_tag("emergency.png", :class => "align-left") %></li>
+				</ul>
+				<!--<ul>
+					<% for service in @services %>
+						<li><%= image_tag(service.image_url) %></li>
+
+					<% end %>
+				</ul>-->
 				<!--<div class="align-left">-->
-				    <ul>
+				    <!--<ul>
 						<li><%= image_tag(service.image_url, :class => "align-left") %></li>
 						<li><%= image_tag(service.image_url, :class => "align-left") %></li>
 						<li><%= image_tag(service.image_url, :class => "align-left") %></li>
 						<li><%= image_tag(service.image_url, :class => "align-left") %></li>
-					</ul>
+					</ul>-->
 				
 				<!--</div>-->
 			</div>
 		
 			<div id="rightColumn">
+				<ul>
+					<li><%= image_tag("resume.png", :class => "align-right") %></li>
+					<li><%= image_tag("mexicobusiness.png", :class => "align-right") %></li>
+					<li><%= image_tag("powerpoint.png", :class => "align-right") %></li>
+					<li><%= image_tag("bigdecisions.png", :class => "align-right") %></li>
+				</ul>
 				<!--<div class="align-right">-->
-					<ul>
+					<!--<ul>
 						<li><%= image_tag(service.image_url, :class => "align-right") %></li>
 						<li><%= image_tag(service.image_url, :class => "align-right") %></li>
 						<li><%= image_tag(service.image_url, :class => "align-right") %></li>
 						<li><%= image_tag(service.image_url, :class => "align-right") %></li>
 
-					</ul>
+					</ul>-->
 				<!--</div>-->
 			</div>
 		
@@ -79,9 +97,15 @@
 					
 			<div id="service">
 				<ul>
-					<li><%= image_tag(service.image_url, :class => "align-right") %></li>
-					<li><%= image_tag(service.image_url, :class => "align-right") %></li>
+					<li><%= image_tag("research.png", :class => "align-right") %></li>
+					<li><%= image_tag("wordpress.png", :class => "align-right") %></li>
+					
 				</ul>
+
+				<!--<ul>
+					<li><%= image_tag(service.image_url, :class => "align-right") %></li>
+					<li><%= image_tag(service.image_url, :class => "align-right") %></li>
+				</ul>-->
 
 			</div>
 		<% end %>
@@ -101,25 +125,20 @@
 
 		    </br>
 			</br>
-		    Kpipe is knowledge available from people with strengths, passions and skills.We create service packages with defined outcomes to meet your needs by empowering people to do what they love. In your business are there things you put off or don't want to do?  Why not get the help you need from someone who is passionate and loves what they are doing?  See Business to Business above for a list of solutions. 
+		    Kpipe is knowledge available from people with strengths, passions and skills. We create service packages with defined outcomes to meet your needs by empowering people to do what they love. In your business are there things you put off or don't want to do?  Why not get the help you need from someone who is passionate and loves what they are doing?  See <a href="<%= businesssolutions_path %>"class="button blue single" >Business to Business<a/> above for a list of solutions. 
 		    </br>
 
 			</blockquote>
 			
 			<div id="featured">
-			<h2>Featured</h2>
-				<h3>Small Business</h3>
+			<h2>Kpipe...</h2>
+				<h3>It is all about people.</h3>
 
-				<p>Who are we?  We are an army of happily employed people, diplaced workers, have another job, stay at home moms, students, retirees, your neighbor, etc.  Whatever else we do in life we have a passion for more.  We have built experience and knowledge in many areas and want to leverage our strengths, passions, and skills to be fulfilling our love.  We are hungry for knowledge and want to share what we have learned and can do with the world.  Bottom line we are individually following our dreams.
+				<p>Who are we?  We are an army of happily employed people, displaced workers, have another job, stay at home moms, students, retirees, your neighbor, etc.  Whatever else we do in life we have a passion for more.  We have built experience and knowledge in many areas and want to leverage our strengths, passions, and skills to be fulfilling our love.  We are hungry for knowledge and want to share what we have learned and can do with the world.  Bottom line we are individually following our dreams.
+				</p>
+				<p>We are your one stop shop for finding the defined service packages you need.  There is no bidding, waiting, and uncertanty that come along in searching for the help you need.  Browse the packages and when you see one you need just click it to learn more.  We are always adding more.  If you have a need that is unfullfilled email us.  Do you have a package that can be offered?  Join us!		
 				</p>
 				<p>
-				</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</p>
 			</div>
 		</div>

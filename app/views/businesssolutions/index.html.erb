@@ -1,3 +1,53 @@
+<DOCTYPE! html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <!--add more meta tags seo -->
+
+
+    <link rel= "stylesheet" type="text/css" href= "businesssolutions.css.scss"/>
+    <title>Kpipe</title>
+</head>
+
+<body>  
+
+    <div id="header">
+        <div id="logo">
+            <%= image_tag("logokpipe180.png", :alt =>"logo") %>
+        </div>
+                <!--center nav bar-->
+
+        <div id="navbar">
+            <nav>
+                <ul>
+                    <li><a href="<%= store_index_path %>" class="button blue left">Welcome<a/></li>
+                    <li><a href="<%= businesssolutions_path %>" class="button blue middle">Business to Business<a/></li>
+                    <li><a href="#" class="button blue middle">Consumer<a/></li>
+                    <li><a href="#" class="button blue middle">Search<a/></li>
+                    <li><a href="#" class="button blue right">Shop<a/></li>
+                </ul>
+            </nav>
+
+
+        </div>
+
+        <!--checkout 
+
+        <div id="checkbar">
+            <nav>
+                <ul>
+                    <li><a href="#">Cart<a/></li>
+                    <li><a href="#">Checkout<a/></li>
+                    <li><a href="#">Track Order<a/></li>
+                    <li><a href="#">My Account<a/></li>
+                </ul>
+            </nav>
+
+
+        </div>-->
+    </div>
+<div id="allservices">
 <h1>Listing services</h1>
 
 <table>
@@ -5,25 +55,34 @@
     <th>Image</th>
     <th>Name</th>
     <th>Description</th>
+    <!--<th>Outcome</th>-->
+    <th>Solution Associate</th>
     <th>Price</th>
-    <!--<th>Image url</th>-->
+    
     <th></th>
     <th></th>
     <th></th>
   </tr>
 
 <% @service.each do |service| %>
-  <tr>
-    <td><%= image_tag service.image_url %></td>
-    <td><%= service.name %></td>
-    <td><%= service.description %></td>
-    <td><%= service.price %></td>
-    <!--<td><%= service.image_url %></td>-->
-    <td><%= link_to 'More', service%></td>
+  <tr id="listing">
+    <td id="serviceimage"><%= image_tag service.image_url %></td>
+    <td id="servicename"><%= service.name %></td>
+    <td id="servicedescription"><%= service.description %></td>
+    <!--<td><%= service.outcome %></td>-->
+    <td id="serviceassociate"><%= service.solution_associate %></td>
+    <td id="serviceprice"><%= service.price %></td>
+    <td><%= link_to 'More Info', service%></td>
     <!--<td><%= link_to 'Edit', edit_service_path(service) %></td>
     <td><%= link_to 'Destroy', service, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
   </tr>
 <% end %>
+
 </table>
+
 </br>
 <%= link_to 'Back', store_index_path %>
+</div>
+
+</body>
+</html>

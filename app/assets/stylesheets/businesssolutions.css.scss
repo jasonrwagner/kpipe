@@ -1,3 +1,44 @@
 // Place all the styles related to the businesssolutions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#allservices {
+	background-image: -moz-linear-gradient(#edf7fa, #73d0f1);
+	padding: 0;
+	border: 1px solid #2D5289;
+}
+#serviceimage {
+	background: white;
+	border: inset;
+	padding: 0;
+}
+
+#servicename {
+	width: 11%;
+	font-weight: bold;
+	text-align: center;
+}
+
+#servicedescription {
+	width: 68%;
+	font-size: 18px;
+	/*text-align: center;*/
+}
+#serviceassociate {
+	width: 8%;
+	text-align: center;
+	
+}
+#serviceprice {
+	width: 5%;
+	text-align: center;
+	
+}
+/*#listing {
+    display:table;
+    width: 100%;
+
+    border: 1px solid #2D5289;
+    background: red;
+    
+}*/

@@ -15,7 +15,7 @@
 		<div id="navbar">
 			<nav>
 				<ul>
-					<li><a href="#" class="button blue left">Welcome<a/></li>
+					<li><a href="<%= store_index_path %>" class="button blue left">Welcome<a/></li>
 					<li><a href="<%= businesssolutions_path %>" class="button blue middle">Business to Business<a/></li>
 					<li><a href="#" class="button blue middle">Consumer<a/></li>
 					<li><a href="#" class="button blue middle">Search<a/></li>
@@ -25,7 +25,7 @@
 
 
 		</div>		
-			<div id="checkbar">
+			<!--<div id="checkbar">
 			<nav>
 				<ul>
 					<li><a href="#">Cart<a/></li>
@@ -36,13 +36,12 @@
 			</nav>
 
 
-		</div>
-
-
+		</div>-->
 </div>
 <body>
+
 	<p id="notice"><%= notice %></p>
-		
+	
 	<div id="individual">
 			<div class="single" style="width:350px; height:350px;">
   				<%= link_to image_tag @service.image_url, :size => '350x350' %>
@@ -58,6 +57,18 @@
 				<p>
   					<b>Description:</b>
   						<%= @service.description %>
+				</p>
+			</div>
+			<div id="outcome">
+				<p>
+  					<b>Outcome:</b>
+  						<%= @service.outcome %>
+				</p>
+			</div>
+			<div id="solutionAssociate">
+				<p>
+  					<b>Solution Associate:</b>
+  						<%= @service.solution_associate %>
 				</p>
 			</div>
 			<br/>
@@ -76,11 +87,19 @@
 		<br/>
 		<br/>
 		<br/>
+		<br/>
+		<br/>
+		<%= link_to 'Back', businesssolutions_path %>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
 
 
 
 
 		<!--<%= link_to 'Edit', edit_service_path(@service) %> |-->
-		<%= link_to 'Back', businesssolutions_path %>
-	</div>	 
+		
+	</div>
+	 
 </body>

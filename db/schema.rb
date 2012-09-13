@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120808003214) do
+ActiveRecord::Schema.define(:version => 20120908192724) do
 
   create_table "kpipe_service_packages", :force => true do |t|
     t.string   "name"
@@ -23,10 +23,12 @@ ActiveRecord::Schema.define(:version => 20120808003214) do
   create_table "services", :force => true do |t|
     t.string   "name"
     t.text     "description"
-    t.decimal  "price",       :precision => 10, :scale => 0
+    t.decimal  "price",              :precision => 10, :scale => 0
     t.string   "image_url"
-    t.datetime "created_at",                                 :null => false
-    t.datetime "updated_at",                                 :null => false
+    t.datetime "created_at",                                        :null => false
+    t.datetime "updated_at",                                        :null => false
+    t.text     "outcome"
+    t.text     "solution_associate"
   end
 
   create_table "stores", :force => true do |t|

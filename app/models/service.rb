@@ -1,5 +1,5 @@
 class Service < ActiveRecord::Base
-  attr_accessible :description, :image_url, :name, :price
+  attr_accessible :description, :image_url, :name, :price, :outcome, :solution_associate
 end
 
 #class Businesssolution < ActiveRecord::Base

@@ -36,6 +36,10 @@ a {
   background-image: -moz-linear-gradient(#73d0f1, #aae5f7);
   background-color: #aae5f7;
 }
+.single {
+  padding: 0;
+ 
+}
 
 .left {
   border-top-right-radius: 0px;
@@ -52,11 +56,13 @@ blockquote {
   /*float:right;*/
   padding: 1.0em;
   font-weight: bold;
-  font-size: 18px; 
+  font-size: 18px;
+  border: 2px solid #6fb1c7;
+
   
   /*background-color: red;*/
-  border-top: 1px solid #FEED91;
-  border-bottom: 1px solid #FEED91;
+  /*border-top: 1px solid #FEED91;*/
+  /*border-bottom: 1px solid #FEED91;*/
   overflow: hidden;
 }
 blockquote p {
@@ -72,7 +78,7 @@ blockquote p {
   float: left;
   margin: 0 0px 0px 0;
   border: inset;
-  background: purple;
+  /*background: purple;*/
   /*disply: inline;*/
 }
 
@@ -82,7 +88,7 @@ blockquote p {
   padding: 0 0 1.25em .15em;
   height: 7.7em;
   /* CHANGED */
-  /*background: orange;*/
+  background: #edf7fa;
   border: 1px solid #2D5289;
 }
 
@@ -121,15 +127,28 @@ blockquote p {
   display: inline;
   padding: 1em;
 }
+#wrapper {
+  float:left; 
+  /*margin: .15em;*/
+  padding: 0;
+  overflow: hidden;
+  /*color: #41788c;*/
+  background-image: -moz-linear-gradient(#edf7fa, #73d0f1);
+
+  /*background: #aae5f7;*/
+}
+#wrapper ul {
+  list-style: none;
+}
 
 #leftColumn {
   float: left;
-  width: 13em;
+  width: 13 em;
   margin: 0px;
 
 
   /*padding: 0 0 .15em .15em;*/
-  background: blue;
+  /*background: blue;*/
   /*border: inset;*/
 } 
 #leftColumn ul {
@@ -138,14 +157,15 @@ blockquote p {
 
 }
 #centerColumn { 
-   margin: 0px; 
+   margin: 0px;
+
   /*margin: 0 15.4em;*/
   /*padding: 1em .5em 2em .5em;*/
   display: inline;
-  font-size: 12px;
+  /*font-size: 12px;*/
   font-family: Arial, Helvetica, sans-serif;
   text-align: justify;
-  background-color: #cccccc;
+  /*background-color: #cccccc;*/
 }
 
 #service {
@@ -153,7 +173,7 @@ blockquote p {
   width: 13em;
   margin: 0;
   /*padding: .25em;*/
-  background: blue;
+  /*background: blue;*/
   /*border: 1px solid #eeeeee;*/
 }
 #service ul {
@@ -163,33 +183,33 @@ blockquote p {
 #service ul li {
 
 }
+#featured {
+  /*background: #aae5f7;*/
+  margin:0 12.8em;
+}
+#featured h2, h3 {
+  margin :1em;
+  font-size: 20px;
+}
 #featured p {
-  /*margin: 1em;*/
+  margin: 1em;
   padding: 1em;
   overflow: hidden;
+  font-size: 16px;
 }
 #rightColumn {
   float: right;
   width: 13em;
   margin: 0;
   /*padding: .25em;*/
-  background: blue;
+  /*background: blue;*/
   /*border:1px solid #eeeeee;*/
 }
 #rightColumn ul {
   display: inline;
   padding: 0 0 5px 0;
 }
-#wrapper {
-  float:left;	
-  /*margin: .15em;*/
-  padding: 0;
-  overflow: hidden;
-  /*background: green;*/
-}
-#wrapper ul {
-  list-style: none;
-}
+
 footer {
   /*background: coral;*/
   text-align: center;
