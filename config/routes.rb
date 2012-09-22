@@ -8,7 +8,8 @@ Kpipe::Application.routes.draw do
 
     get "businesssolutions/show"
   end
-  #root :to => 'store#index'
+  #map.root :controller => "store"
+  root :to => 'store#index'
   resources :stores
 
   get "store/index"
