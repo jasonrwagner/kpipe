@@ -8,7 +8,7 @@ gem 'rails', '3.2.6'
 #gem 'sqlite3'
 gem 'mysql2'
 gem 'tilt'
-gem 'rvm-capistrano'
+#gem 'rvm-capistrano'
 
 
 # Gems used only for assets and not required
@@ -43,7 +43,8 @@ end
 # gem 'unicorn'
 
 # Deploy with Capistrano
-gem 'capistrano'
+gem 'rvm-capistrano'
+#gem 'capistrano'
 
 # To use debugger
 # gem 'debugger'

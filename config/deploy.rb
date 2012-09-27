@@ -1,6 +1,14 @@
 # Automatic "bundle install" after deploy
 require 'bundler/capistrano'
 
+# Add RVM's lib directory to the load path.
+@
+# Load RVM's capistrano plugin.    
+require "rvm/capistrano"
+
+set :rvm_ruby_string, '1.9.3'
+set :rvm_type, :user  # Don't use system-wide RVM
+
 # Application name
 set :application, "kpipe"
 
@@ -32,6 +40,9 @@ server 'failureu.com', :app, :web, :db, :primary => true
 #server "failureu.com", :app, :web, :db, :primary => true
 ssh_options[:forward_agent] = true
 default_run_options[:pty] = true
+
+
+
 
 #namespace :deploy do
 #  task :start do ; end
