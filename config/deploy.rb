@@ -2,12 +2,13 @@
 require 'bundler/capistrano'
 
 # Add RVM's lib directory to the load path.
-@
-# Load RVM's capistrano plugin.    
-require "rvm/capistrano"
+#$:.unshift(File.expand_path('./lib', ENV['rvm_path'])
 
-set :rvm_ruby_string, '1.9.3'
-set :rvm_type, :user  # Don't use system-wide RVM
+# Load RVM's capistrano plugin.    
+#require 'rvm/capistrano'
+
+#set :rvm_ruby_string, '1.9.3'
+#set :rvm_type, :user  # Don't use system-wide RVM
 
 # Application name
 set :application, "kpipe"
@@ -26,14 +27,15 @@ set :scm, 'git'
 
 # Use local git repository
 #set :repository, "."
-set :repository,  "git@github.com:jasonrwagner/kpipe.git"
+set :repository, "git@github.com:jasonrwagner/kpipe.git"
 
 # master is our default git branch
-set :branch, "master"
+set :branch, 'master'
 
 # Checkout, compress and send a local copy
 #set :deploy_via, :copy
 set :deploy_to, "/home5/failureu/kpipe"
+set :deploy_via, :remote_cache
 
 # We have all components of the app on the same server
 server 'failureu.com', :app, :web, :db, :primary => true
@@ -60,7 +62,8 @@ after "deploy:restart", "deploy:cleanup"
 set :scm_passphrase, "7Roasts" # The deploy user's password
 ssh_options[:forward_agent] = true
 
-set :deploy_via, :remote_cache
+#set :deploy_via, :remote_cache
+#set :deploy_via, :copy
 #set :stages, ["staging", "production"]
 #set :default_stage, "staging"
 
