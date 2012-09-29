@@ -1,12 +1,14 @@
 source 'https://rubygems.org'
 
+ruby '1.9.3'
+
 gem 'rails', '3.2.6'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 #gem 'sqlite3'
-gem 'mysql2'
+
 gem 'tilt'
 #gem 'rvm-capistrano'
 gem 'execjs'
@@ -14,6 +16,7 @@ gem 'execjs'
 gem 'therubyracer', :platforms => :ruby
 
 group :development, :test do
+  gem 'mysql2'
   gem 'turn'
   gem 'rspec-rails' #, "~> 2.8"
   gem 'capybara'
@@ -29,6 +32,10 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+group :production do
+  gem 'pg'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
