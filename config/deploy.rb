@@ -28,14 +28,16 @@ set :scm, 'git'
 # Use local git repository
 #set :repository, "."
 set :repository, "git@github.com:jasonrwagner/kpipe.git"
+#set :repository, "git://github.com/jasonrwagner/kpipe.git"
 
 # master is our default git branch
-set :branch, 'master'
+set :branch, "master"
 
 # Checkout, compress and send a local copy
 #set :deploy_via, :copy
 set :deploy_to, "/home5/failureu/kpipe"
 set :deploy_via, :remote_cache
+#set :deploy_via, :copy
 
 # We have all components of the app on the same server
 server 'failureu.com', :app, :web, :db, :primary => true
