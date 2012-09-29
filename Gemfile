@@ -15,6 +15,7 @@ gem 'execjs'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer', :platforms => :ruby
 gem 'heroku'
+gem 'thin'
 
 group :development, :test do
   gem 'mysql2'
@@ -36,6 +37,7 @@ gem 'jquery-rails'
 
 group :production do
   gem 'pg'
+  gem 'thin'
 end
 
 # To use ActiveModel has_secure_password
