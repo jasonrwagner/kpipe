@@ -1,7 +1,7 @@
 class StoreController < ApplicationController
   #caches_page :index
   def index
-  	@services = Service.all #(:all, :limit =>1 ) works but same image
+  	@services = Service.find(:all, :limit =>1 ) #works but same image
     #@services = Service.order("RAND()").uniq.limit(1) #works but same image
     #@services = Service.all.shuffle[0..1] works but same image
 
