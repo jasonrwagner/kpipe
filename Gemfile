@@ -14,6 +14,7 @@ gem 'tilt'
 gem 'execjs'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer', :platforms => :ruby
+gem 'heroku'
 
 group :development, :test do
   gem 'mysql2'
