@@ -18,7 +18,8 @@ gem 'heroku'
 gem 'thin'
 
 group :development, :test do
-  gem 'mysql2'
+  #gem 'mysql2'
+  gem 'pg'
   gem 'turn'
   gem 'rspec-rails' #, "~> 2.8"
   gem 'capybara'
