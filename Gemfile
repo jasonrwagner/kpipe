@@ -16,6 +16,7 @@ gem 'execjs'
 gem 'therubyracer', :platforms => :ruby
 gem 'heroku'
 gem 'thin'
+gem 'taps'
 
 group :development, :test do
   #gem 'mysql2'
