@@ -3,23 +3,23 @@
 #
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
-development:\
-  adapter: postgresql
-  encoding: unicode
-  database: kpipe_production
-  pool: 5
-  username: root
-  password:
-  
-  #adapter: mysql2
-  #encoding: utf8
-  #database: kpipe_development
+development:
+  #adapter: postgresql
+  #encoding: unicode
+  #database: kpipe_production
+  #pool: 5
   #username: root
   #password:
-  #host: localhost
-  #socket: /var/run/mysqld/mysqld.sock
-  #pool: 5
-  #timeout: 5000
+  
+  adapter: mysql2
+  encoding: utf8
+  database: kpipe_development
+  username: root
+  password:
+  host: localhost
+  socket: /var/run/mysqld/mysqld.sock
+  pool: 5
+  timeout: 5000
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
