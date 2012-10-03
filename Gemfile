@@ -7,7 +7,7 @@ gem 'rails', '3.2.6'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+
 gem 'pg'
 gem 'tilt'
 #gem 'rvm-capistrano'
@@ -17,8 +17,10 @@ gem 'therubyracer', :platforms => :ruby
 gem 'heroku'
 gem 'thin'
 gem 'taps'
+gem 'sqlite3', :group => [:development, :test]
 
 group :development, :test do
+
   gem 'mysql2'
   gem 'taps', :require => false # has an sqlite dependency, which heroku hates
   gem 'pg'
