@@ -18,24 +18,38 @@ a {
   padding: 8px 12px;
   border-radius: 3px;
   -moz-border-radius: 3px;
+  box-shadow: inset 0px 0px 2px #fff;
+  -o-box-shadow: inset 0px 0px 2px #fff;
+  -webkit-box-shadow: inset 0px 0px 2px #fff;
+  -moz-box-shadow: inset 0px 0px 2px #fff;
 }
 .button:active {
   box-shadow:inset 0px 0px 3px #999;
   -moz-box-shadow: inste 0px 0px 3px #999;
+  -o-box-shadow: inset 0px 0px 3px #999;
+  -webkit-box-shadow: inset 0px 0px 3px #999;
+  -moz-box-shadow: inset 0px 0px 3px #999;
 }
 .blue {
   color: #41788c;
   border: 1px solid #6fb1c7;
   background-image: -moz-linear-gradient(#aae5f7, #73d0f1);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#73d0f1), to(#aae5f7));
+  background-image: -webkit-linear-gradient(#aae5f7, #73d0f1);
+  background-image: -o-linear-gradient(#aae5f7, #73d0f1);
   text-shadow: 1px 1px 1px #bfeafb;
   background-color: #73d0f1;
 
 }
 .blue:hover {
-  border: 1px solid #4609ad;
+  border: 1px solid #4690ad;
   background-image: -moz-linear-gradient(#73d0f1, #aae5f7);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#aae5f7), to(#73d0f1));
+  background-image: -webkit-linear-gradient(#73d0f1, #aae5f7);
+  background-image: -o-linear-gradient(#73d0f1, #aae5f7);
   background-color: #aae5f7;
 }
+.blue:active {border: 1px solid #3b778b;}
 .single {
   padding: 0;
  
@@ -140,6 +154,9 @@ blockquote p {
   overflow: hidden;
   /*color: #41788c;*/
   background-image: -moz-linear-gradient(#edf7fa, #73d0f1);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#73d0f1), to(#aae5f7));
+  background-image: -webkit-linear-gradient(#aae5f7, #73d0f1);
+  background-image: -o-linear-gradient(#aae5f7, #73d0f1);
 
   /*background: #aae5f7;*/
 }
