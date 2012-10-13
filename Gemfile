@@ -13,7 +13,7 @@ gem 'tilt'
 #gem 'rvm-capistrano'
 gem 'execjs'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-gem 'therubyracer', :platforms => :ruby
+#gem 'therubyracer', :platforms => :ruby
 gem 'heroku'
 gem 'thin'
 gem 'taps'
