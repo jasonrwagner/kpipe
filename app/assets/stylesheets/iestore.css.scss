@@ -168,7 +168,7 @@ blockquote p {
   float: left;
   width: 13 em;
   margin: 0px;
-  display:block;
+  display: inline-block;
 
 
   /*padding: 0 0 .15em .15em;*/
@@ -176,7 +176,8 @@ blockquote p {
   /*border: inset;*/
 } 
 #leftColumn ul {
-  display: inline;
+  float:left;
+  display: inline-block;
   padding: 0 0 5px 0;
 
 }
