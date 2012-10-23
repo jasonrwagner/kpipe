@@ -116,8 +116,8 @@ blockquote p {
 #navbar {
   float: left;
   margin-top:68px;
-  padding: 0;
-  width: 43%;
+  padding: 0 10%;
+  /*width: 43%;*/
   /*overflow: hidden;*/
   /*background: aqua;*/
 }
@@ -133,7 +133,7 @@ blockquote p {
 }
 #textlogo {
   float:right;
-  border-left:1px solid #2D5289;
+  border-right:1px solid #2D5289;
 
 }
 
@@ -146,6 +146,10 @@ blockquote p {
 #checkbar ul li {
   display: inline;
   padding: 1em;
+}
+#video {
+  float: right;
+  padding: 0 0.25%;
 }
 #wrapper {
   float:left; 
@@ -239,6 +243,6 @@ footer {
   position: static;	
 }
 h1 {
-  padding: 0 2% 0 0;
+  padding: 1% 2% 1% 1%;
   font-size:38px;
 }
