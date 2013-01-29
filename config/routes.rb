@@ -25,6 +25,7 @@ Kpipe::Application.routes.draw do
 
   resources :services
   resources :cart
+  resources :charges
 
   #match'service/:id' => 'service#show' my add on test it out
   

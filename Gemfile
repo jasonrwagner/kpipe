@@ -20,6 +20,7 @@ gem 'taps'
 gem 'devise'
 gem 'cancan'
 gem 'rails_admin'
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 gem 'sqlite3', :group => [:development, :test]
 
 group :development, :test do

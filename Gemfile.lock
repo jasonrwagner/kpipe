@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/stripe/stripe-ruby
+  revision: 3e30d5ad78e3b76f99287fa932100a9af9c8c5b5
+  specs:
+    stripe (1.7.9)
+      multi_json (>= 1.0.4, < 2)
+      rest-client (~> 1.4)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -254,6 +262,7 @@ DEPENDENCIES
   rvm-capistrano
   sass-rails (~> 3.2.3)
   sqlite3
+  stripe!
   taps
   thin
   tilt
