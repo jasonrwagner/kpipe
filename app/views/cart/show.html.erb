@@ -21,6 +21,7 @@
 					<li><a href="mailto:info@kpipe.com" class="button blue right">Contact<a/></li>
 					<!--<li><a href="#" class="button blue right">Shop<a/></li>-->
 				</ul>
+
 			</nav>
 
 
@@ -46,8 +47,8 @@
 	<p id="notice"><%= notice %></p>
 	
 	<div id="individual">
-			<div class="single" style="width:350px; height:350px;">
-  				<%= link_to image_tag @service.image_url, :size => '350x350' %>
+			<div class="single" style="width:150px; height:150px;">
+  				<%= link_to image_tag @service.image_url, :size => '150x150' %>
 			</div>
 
 			<div id="name">
@@ -55,55 +56,22 @@
   						<%= @service.name %>
 				</p>
 			</div>
-
-			<div id="description">
-				<p>
-  					<b>Description:</b>
-  						<%= @service.description %>
-				</p>
-			</div>
-			<div id="outcome">
-				<p>
-  					<b>Outcome:</b>
-  						<%= @service.outcome %>
-				</p>
-			</div>
-
-			<div id="solutionAssociate">
-				<p>
-  					<b>Solution Associate: </b>
-  						<%= @service.solution_associate %>
-				</p>
-			</div>
-
 			<div id="price">
 				<p>
   					<b>Price: $</b>
   						<%= @service.price %>
 				</p>
 			</div>
-			
-	
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<%= link_to 'Cart', cart_path %>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<%= link_to 'Back', businesssolutions_path %>
-		<br/>
-
-
-
-
-		<!--<%= link_to 'Edit', edit_service_path(@service) %> |-->
-		
 	</div>
-	 
+	    	<script
+  				src="https://checkout.stripe.com/v2/checkout.js" class="stripe-button"
+  				data-key="pk_test_czwzkTp2tactuLOEOqbMTRzG"
+  				data-amount="2000"
+  				data-name="Demo Site"
+  				data-description="2 widgets ($20.00)"
+  				data-image="/128x128.png">
+  			</script>
+
+ 		<%= link_to 'Back', businesssolutions_path %>
 </body>
+</html>
