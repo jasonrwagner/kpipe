@@ -18,6 +18,7 @@ gem 'heroku'
 gem 'thin'
 gem 'taps'
 gem 'devise'
+gem 'cancan'
 gem 'sqlite3', :group => [:development, :test]
 
 group :development, :test do
