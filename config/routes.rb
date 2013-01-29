@@ -1,4 +1,6 @@
 Kpipe::Application.routes.draw do
+  devise_for :users
+
   resources :businesssolutions do
     member do
       get :services

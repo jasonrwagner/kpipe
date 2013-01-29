@@ -17,6 +17,7 @@ gem 'execjs'
 gem 'heroku'
 gem 'thin'
 gem 'taps'
+gem 'devise'
 gem 'sqlite3', :group => [:development, :test]
 
 group :development, :test do
