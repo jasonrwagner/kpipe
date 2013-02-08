@@ -23,7 +23,7 @@
 </script>
 </head>
 
-<body>  
+<header>  
 
     <div id="header">
         <div id="logo">
@@ -63,42 +63,46 @@
 
         </div>-->
     </div>
-<div id="allservices">
-<h1>Service Listings</h1>
+</header>
+<body>
+    <div id="wrapper">
+        <div id="allservices">
+            <h1>Service Listings</h1>
 
-<table>
-  <tr>
-    <th>Image</th>
-    <th>Name</th>
-    <th>Description</th>
-    <!--<th>Outcome</th>-->
-    <th>Solution Associate</th>
-    <th>Price</th>
+                <table>
+                    <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <!--<th>Outcome</th>-->
+                        <th>Solution Associate</th>
+                        <th>Price</th>
     
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
 
-<% @service.each do |service| %>
-  <tr id="listing">
-    <td id="serviceimage"><%= image_tag service.image_url %></td>
-    <td id="servicename"><%= service.name %></td>
-    <td id="serviceexcerpt"><%= service.excerpt %></td>
-    <!--<td><%= service.outcome %></td>-->
-    <td id="serviceassociate"><%= service.solution_associate %></td>
-    <td id="serviceprice"><%= service.price %></td>
-    <td><%= link_to 'More Info', service%></td>
-    <!--<td><%= link_to 'Edit', edit_service_path(service) %></td>
-    <td><%= link_to 'Destroy', service, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
-  </tr>
-<% end %>
+                    <% @service.each do |service| %>
+                    <tr id="listing">
+                        <td id="serviceimage"><%= image_tag service.image_url %></td>
+                        <td id="servicename"><%= service.name %></td>
+                        <td id="serviceexcerpt"><%= service.excerpt %></td>
+                        <!--<td><%= service.outcome %></td>-->
+                        <td id="serviceassociate"><%= service.solution_associate %></td>
+                        <td id="serviceprice"><%= service.price %></td>
+                        <td><%= link_to 'More Info', service%></td>
+                        <!--<td><%= link_to 'Edit', edit_service_path(service) %></td>
+                        <td><%= link_to 'Destroy', service, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+                    </tr>
+                    <% end %>
 
-</table>
+                </table>
 
-</br>
-<%= link_to 'Back', store_index_path %>
-</div>
+                </br>
+                <%= link_to 'Back', store_index_path %>
+        </div>
+    </div>
 
 </body>
 </html>
