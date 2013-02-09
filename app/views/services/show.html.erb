@@ -8,7 +8,8 @@
 <link rel= "stylesheet" type="text/css" href= "individual_service.css.scss"/>
 
 </head>
-<div id="header">
+<header>
+	<div id="header">
 		<div id="logo">
 			<%= image_tag("kpipelogo.jpg", :alt =>"logo") %>
 		</div>
@@ -40,48 +41,50 @@
 
 
 		</div>-->
-</div>
+	</div>
+</header>
 <body>
+	<div id="package">
 
-	<p id="notice"><%= notice %></p>
+	  <p id="notice"><%= notice %></p>
 	
-	<div id="individual">
+	    <div id="individual">
 			<div class="single" style="width:350px; height:350px;">
   				<%= link_to image_tag @service.image_url, :size => '350x350' %>
 			</div>
 
-			<div id="name">
+			  <div id="name">
 				<p><b>Name:</b>
   						<%= @service.name %>
 				</p>
-			</div>
+			  </div>
 
-			<div id="description">
+			  <div id="description">
 				<p>
   					<b>Description:</b>
   						<%= @service.description %>
 				</p>
-			</div>
-			<div id="outcome">
+			  </div>
+			  <div id="outcome">
 				<p>
   					<b>Outcome:</b>
   						<%= @service.outcome %>
 				</p>
-			</div>
+			  </div>
 
-			<div id="solutionAssociate">
+			  <div id="solutionAssociate">
 				<p>
   					<b>Solution Associate: </b>
   						<%= @service.solution_associate %>
 				</p>
-			</div>
+			  </div>
 
-			<div id="price">
+			  <div id="price">
 				<p>
   					<b>Price: $</b>
   						<%= @service.price %>
 				</p>
-			</div>
+			  </div>
 			
 	
 		<br/>
@@ -90,20 +93,18 @@
 		<br/>
 		<br/>
 		<br/>
-		<%= link_to 'Cart', cart_path %>
+		<div id ="cart">
+		  <a href="<%= cart_path %>" class="button blue middle">Add to Cart<a/>
+		</div>
+		<br/>
+		<br/>
+		<div id ="back">
+		  <a href="<%= businesssolutions_path %>" class="button blue middle">Back<a/>
+		</div>
 		<br/>
 		<br/>
 		<br/>
-		<br/>
-		<br/>
-		<%= link_to 'Back', businesssolutions_path %>
-		<br/>
-
-
-
-
-		<!--<%= link_to 'Edit', edit_service_path(@service) %> |-->
-		
+		</div>
 	</div>
 	 
 </body>

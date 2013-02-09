@@ -1,3 +1,8 @@
+#package {
+	background-image: -moz-linear-gradient(#edf7fa, #73d0f1);
+    background-image: -webkit-linear-gradient(#edf7fa, #73d0f1);
+}
+
 .single {
    
    /*margin: 0 0px 0px 0;*/
@@ -9,7 +14,7 @@
 #individual {
     margin-top: 0px;
     
-	background-image: -moz-linear-gradient(#edf7fa, #73d0f1);
+
 	
 
 }
@@ -52,5 +57,14 @@
 	font-size :18px;
 	
 
+}
+#cart  {
+	float:  right;
+	margin-right: 5%;
+}
+#back  {
+	float:  right;
+	margin-right: 6.25%;
+	padding: 4px;
 }
 
