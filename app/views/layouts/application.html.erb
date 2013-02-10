@@ -33,7 +33,7 @@
 
 	<div id="header">
 		<div id="logo">
-			<%= image_tag("kpipelogo.jpg", :alt =>"logo") %>
+			<%= image_tag("kpipetextlogo.jpg", :alt =>"logo") %>
 		</div>
 				<!--center nav bar-->
 
@@ -47,10 +47,19 @@
 					<!--<li><a href="#" class="button blue right">Shop<a/></li>-->
 				</ul>
 			</nav>
-
-
 		</div>
-		<div id="textlogo">
+		<div id="sign_in">			
+			<%= link_to '|Sign In|', user_session_path %>
+			<%= link_to 'Sign Out |', destroy_user_session_path, :method => :delete %>
+			<% if current_user %>
+			        Welcome, <%= current_user.email %> !
+			<% end %>
+
+	    </div>
+
+
+	</div>
+		<!--<div id="textlogo">
 			<%= image_tag("kpipetextlogo.jpg", :alt =>"textlogo") %>
 		</div>
 
