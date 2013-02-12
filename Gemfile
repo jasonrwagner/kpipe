@@ -22,6 +22,7 @@ gem 'cancan'
 gem 'rails_admin'
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 gem 'sqlite3', :group => [:development, :test]
+gem 'json', '1.7.7'
 
 group :development, :test do
 

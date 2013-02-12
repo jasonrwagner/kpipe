@@ -107,7 +107,7 @@ GEM
       jquery-rails
       railties (>= 3.1.0)
     jruby-pageant (1.1.1)
-    json (1.7.5)
+    json (1.7.7)
     kaminari (0.14.1)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
@@ -253,6 +253,7 @@ DEPENDENCIES
   guard-rspec
   heroku
   jquery-rails
+  json (= 1.7.7)
   launchy
   mysql2
   pg
